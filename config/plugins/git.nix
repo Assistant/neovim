@@ -1,5 +1,8 @@
 {
-  plugins.lazygit.enable = true;
+  plugins = {
+    lazygit.enable = true;
+    gitsigns.enable = true;
+  };
 
   keymaps = [{
     action = "<CMD>LazyGit<CR>";
