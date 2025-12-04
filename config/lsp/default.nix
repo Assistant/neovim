@@ -2,11 +2,11 @@
   imports = [
     ./dap.nix
     ./rust.nix
+    ./treesitter.nix
   ];
 
   plugins = {
     lspconfig.enable = true;
-    treesitter.enable = true;
     nix-develop.enable = true;
     lsp-format.enable = true;
     blink-cmp = {
