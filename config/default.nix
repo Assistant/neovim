@@ -38,4 +38,10 @@
     updatetime = 50;
     colorcolumn = "98";
   };
+
+  autoCmd = [{
+    event = "Filetype";
+    pattern = "nix";
+    command = "setlocal tabstop=2 shiftwidth=2 softtabstop=2";
+  }];
 }
