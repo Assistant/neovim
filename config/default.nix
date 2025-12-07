@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   imports = [
     ./keymaps.nix
     ./lsp
@@ -44,4 +44,6 @@
     pattern = "nix";
     command = "setlocal tabstop=2 shiftwidth=2 softtabstop=2";
   }];
+
+  extraPackages = with pkgs; [ curl ];
 }
