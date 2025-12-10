@@ -1,5 +1,18 @@
 { lib, ... }: {
   keymaps = [
+    # Move selected text
+    {
+      action = lib.nixvim.mkRaw "[[:m '>+1<CR>gv=gv]]";
+      key = "J";
+      mode = [ "v" ];
+      options.desc = "Move selected text down";
+    }
+    {
+      action = lib.nixvim.mkRaw "[[:m '<-2<CR>gv=gv]]";
+      key = "K";
+      mode = [ "v" ];
+      options.desc = "Move selected text up";
+    }
     # Keep cursor in sensible position
     {
       action = "mzJ`z";
