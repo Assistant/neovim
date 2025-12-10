@@ -13,7 +13,6 @@
       enable = true;
       settings.keymap = {
         "<PageUp>" = [ "scroll_documentation_up" "fallback" ];
-        "<Esc>" = [ "hide" "fallback" ];
         "<PageDown>" = [ "scroll_documentation_down" "fallback" ];
         "<C-Space>" = [ "show" "show_documentation" "hide_documentation" ];
         "<CR>" = [ "accept" "fallback" ];
