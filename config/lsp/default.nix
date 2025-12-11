@@ -29,6 +29,7 @@
     servers = {
       cssls.enable = true;
       jedi_language_server.enable = true;
+      lua_ls.enable = true;
       nil_ls = {
         enable = true;
         config.settings =
