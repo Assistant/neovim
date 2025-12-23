@@ -10,8 +10,8 @@ in
       ai = { };
       icons = { };
       notify = { };
-      trailspace = { };
       pairs = { };
+      trailspace = { };
     };
   };
 
