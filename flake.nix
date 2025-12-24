@@ -19,6 +19,7 @@
       packages = forAllSystems (system: {
         default = (nixvim.legacyPackages.${system}.makeNixvimWithModule (configuration system));
         nixpkgs-fmt = nixpkgs.legacyPackages.${system}.callPackage ./nixpkgs-fmt.nix { };
+        libtexprintf = nixpkgs.legacyPackages.${system}.callPackage ./libtexprintf.nix { };
       });
 
       legacyPackages = self.packages;
