@@ -5,6 +5,7 @@
     ./mini.nix
     ./neorg.nix
     ./oil.nix
+    ./render-markdown.nix
     ./statusbar.nix
     ./telescope.nix
     ./undotree.nix
