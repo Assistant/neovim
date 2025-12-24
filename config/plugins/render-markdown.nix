@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{ self, lib, pkgs, ... }: {
   plugins.render-markdown = {
     enable = true;
     settings = {
@@ -43,4 +43,5 @@
     };
   };
   highlightOverride."@markup.raw.block".link = "@markup";
+  extraPackages = [ self.packages.${pkgs.stdenv.hostPlatform.system}.libtexprintf ];
 }
