@@ -2,6 +2,7 @@
   imports = [
     ./git.nix
     ./harpoon.nix
+    ./image.nix
     ./mini.nix
     ./neorg.nix
     ./oil.nix
