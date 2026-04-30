@@ -9,7 +9,6 @@
   ];
 
   plugins = {
-    vim-be-good.enable = true;
     which-key.enable = true;
   };
 }
