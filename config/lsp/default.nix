@@ -8,7 +8,6 @@
   plugins = {
     lspconfig.enable = true;
     nix-develop.enable = true;
-    lsp-format.enable = true;
     blink-cmp = {
       enable = true;
       settings.keymap = {
@@ -72,4 +71,16 @@
       options.desc = "Load Nix development environment";
     }
   ];
+
+  autoCmd = [{
+    event = "LspAttach";
+    callback.__raw = ''
+      function(args)
+        vim.api.nvim_create_autocmd("BufWritePre", {
+          buffer = args.buf,
+          callback = function() vim.lsp.buf.format() end,
+        })
+      end
+    '';
+  }];
 }
