@@ -28,7 +28,7 @@
     inlayHints.enable = true;
     servers = {
       cssls.enable = true;
-      jedi_language_server.enable = true;
+      zuban.enable = true;
       lua_ls.enable = true;
       nil_ls = {
         enable = true;
