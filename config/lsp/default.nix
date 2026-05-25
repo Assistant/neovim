@@ -8,6 +8,7 @@
   plugins = {
     lspconfig.enable = true;
     nix-develop.enable = true;
+    vim-matchup.enable = true;
     blink-cmp = {
       enable = true;
       settings.keymap = {
