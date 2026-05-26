@@ -30,6 +30,7 @@
       cssls.enable = true;
       zuban.enable = true;
       lua_ls.enable = true;
+      html.enable = true;
       nil_ls = {
         enable = true;
         config.settings =
